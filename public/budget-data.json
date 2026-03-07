@@ -1,0 +1,179 @@
+{
+  "deficit": 120,
+  "fiscalYear": "FY2027",
+  "dataSource": "City of San Diego Open Data Portal - Operating Budget (FY2026 Adopted)",
+  "totalGeneralFundSpending": 2671,
+  "departments": [
+    {
+      "id": "police",
+      "name": "Police",
+      "fy26": 773.7,
+      "fy25": 730.2,
+      "pct": 29.0,
+      "description": "Patrol, investigations, traffic enforcement, and community policing across 9 divisions. Largest discretionary department in the General Fund.",
+      "perResident": 546,
+      "employees": 2900,
+      "context": "San Diego has one of the highest police-to-resident ratios among major California cities."
+    },
+    {
+      "id": "fire",
+      "name": "Fire-Rescue",
+      "fy26": 454.1,
+      "fy25": 418.3,
+      "pct": 17.0,
+      "description": "Fire suppression, emergency medical services, lifeguard operations, and wildfire prevention across 47 fire stations.",
+      "perResident": 320,
+      "employees": 2100,
+      "context": "Wildfire risk has increased costs significantly — fire prevention programs doubled since 2020."
+    },
+    {
+      "id": "parks",
+      "name": "Parks & Recreation",
+      "fy26": 244.5,
+      "fy25": 238.1,
+      "pct": 9.2,
+      "description": "Maintenance of 340+ parks, recreation centers, pools, trails, canyons, and open space. The proposed budget includes reduced maintenance hours.",
+      "perResident": 172,
+      "employees": 1800,
+      "context": "Parks serve as heat refuges and mental health resources — disproportionately used by lower-income neighborhoods."
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation & Streets",
+      "fy26": 194.8,
+      "fy25": 191.2,
+      "pct": 7.3,
+      "description": "Street maintenance, traffic signals, sidewalk repair. SD has a $3B+ deferred maintenance backlog.",
+      "perResident": 137,
+      "employees": 900,
+      "context": "Every dollar cut today adds ~$7 in future repair costs due to deferred street maintenance."
+    },
+    {
+      "id": "homelessness",
+      "name": "Homelessness Strategies",
+      "fy26": 106.5,
+      "fy25": 95.4,
+      "pct": 4.0,
+      "description": "Outreach teams, shelter operations, housing navigation, and encampment response. Coordinates with county and nonprofits.",
+      "perResident": 75,
+      "employees": 420,
+      "context": "San Diego has the 4th largest unhoused population in the US. Shelter costs have risen 40% since 2021."
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "fy26": 75.2,
+      "fy25": 72.8,
+      "pct": 2.8,
+      "description": "36 branch libraries plus Central Library — books, digital resources, programs for children, seniors, job seekers, and new residents.",
+      "perResident": 53,
+      "employees": 650,
+      "context": "Libraries are the only truly free public space in most neighborhoods. Branch closures disproportionately affect renters and seniors."
+    },
+    {
+      "id": "stormwater",
+      "name": "Stormwater",
+      "fy26": 86.6,
+      "fy25": 82.1,
+      "pct": 3.2,
+      "description": "Flood control infrastructure, stormwater treatment, and MS4 permit compliance. Heavy rain events have exposed major infrastructure gaps.",
+      "perResident": 61,
+      "employees": 380,
+      "context": "Recent storms revealed $500M+ in deferred stormwater infrastructure needs."
+    },
+    {
+      "id": "citywide",
+      "name": "Citywide & Administrative",
+      "fy26": 465.3,
+      "fy25": 449.6,
+      "pct": 17.4,
+      "description": "Debt service, City Attorney, City Treasurer, Finance, HR, IT, and other central services that support all departments.",
+      "perResident": 328,
+      "employees": 1200,
+      "context": "Includes pension obligations — the city's pension debt is ~$3B and growing."
+    },
+    {
+      "id": "other",
+      "name": "Other Departments",
+      "fy26": 284.0,
+      "fy25": 260.5,
+      "pct": 10.6,
+      "description": "Development Services, Economic Development, City Planning, General Services, Real Estate, and other City functions.",
+      "perResident": 200,
+      "employees": 1400,
+      "context": "Includes permitting (which funds itself via fees) and economic development programs."
+    }
+  ],
+  "revenues": [
+    {
+      "id": "prop_tax",
+      "name": "Property Tax",
+      "fy26": 574.4,
+      "description": "State-mandated 1% property tax — SD receives ~17% of the countywide levy. Cannot be increased without a 2/3 voter supermajority.",
+      "controllable": false
+    },
+    {
+      "id": "sales_tax",
+      "name": "Sales Tax",
+      "fy26": 367.3,
+      "description": "City receives 1% of the 8.75% sales tax. A 0.25% increase generates ~$90M/year.",
+      "controllable": true,
+      "options": [
+        { "label": "0.25% increase (+$90M/yr)", "value": 90, "note": "Requires simple majority vote" },
+        { "label": "0.5% increase (+$180M/yr)", "value": 180, "note": "Requires simple majority vote" }
+      ]
+    },
+    {
+      "id": "tot",
+      "name": "Hotel Tax (TOT)",
+      "fy26": 175.2,
+      "description": "Transient Occupancy Tax on hotel stays. Currently 10.5%. San Diego is a major tourism destination.",
+      "controllable": true,
+      "options": [
+        { "label": "+1% hotel tax (+$17M/yr)", "value": 17, "note": "Council can approve without voter vote" }
+      ]
+    },
+    {
+      "id": "fees",
+      "name": "User Fee Recovery",
+      "fy26": 0,
+      "description": "Many city services are provided below cost. Increasing cost recovery on permits and recreation programs could raise revenue.",
+      "controllable": true,
+      "options": [
+        { "label": "Increase cost recovery (+$25M/yr)", "value": 25, "note": "Shifts costs to direct service users" }
+      ]
+    },
+    {
+      "id": "cannabis",
+      "name": "Cannabis Tax",
+      "fy26": 14.0,
+      "description": "Tax on cannabis retailers. Current rate is 8%. Raising it could generate modest additional revenue.",
+      "controllable": true,
+      "options": [
+        { "label": "Increase rate (+$8M/yr)", "value": 8, "note": "Risk of pushing buyers to unregulated market" }
+      ]
+    }
+  ],
+  "civicActions": [
+    {
+      "label": "Contact Your Council Member",
+      "url": "https://www.sandiego.gov/citycouncil",
+      "description": "Find and email your district representative directly."
+    },
+    {
+      "label": "Speak at a Budget Hearing",
+      "url": "https://www.sandiego.gov/city-clerk/officialdocs/council-agendas",
+      "description": "The Council holds public hearings in May and June. Sign up to speak on the record."
+    },
+    {
+      "label": "Read the Full Proposed Budget",
+      "url": "https://www.sandiego.gov/finance/annual-budget",
+      "description": "Download and read the complete FY2027 proposed budget document."
+    },
+    {
+      "label": "Explore the Open Data Portal",
+      "url": "https://data.sandiego.gov",
+      "description": "All spending and revenue data used in this tool comes from the City's open data portal."
+    }
+  ]
+}
