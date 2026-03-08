@@ -292,6 +292,32 @@ function Expandable({ label, children, className }: { label: string; children: R
   );
 }
 
+// ── Chart label that wraps long department names onto two lines ───────────────
+
+function WrappedYAxisTick({ x, y, payload }: { x?: number; y?: number; payload?: { value: string } }) {
+  if (!payload || x === undefined || y === undefined) return null;
+  const text = payload.value;
+  const breakAt = 14; // chars before we wrap
+  if (text.length <= breakAt) {
+    return (
+      <text x={x} y={y} dy={4} textAnchor="end" fill="#1c1917" fontSize={11}>
+        {text}
+      </text>
+    );
+  }
+  // Find the last space at or before breakAt
+  let split = text.lastIndexOf(" ", breakAt);
+  if (split === -1) split = breakAt;
+  const line1 = text.slice(0, split).trim();
+  const line2 = text.slice(split).trim();
+  return (
+    <text x={x} y={y} textAnchor="end" fill="#1c1917" fontSize={11}>
+      <tspan x={x} dy={-5}>{line1}</tspan>
+      <tspan x={x} dy={14}>{line2}</tspan>
+    </text>
+  );
+}
+
 function RevenuePieChart() {
   const [activeSlice, setActiveSlice] = useState<number | null>(null);
   const active = activeSlice !== null ? REV_SOURCES[activeSlice] : null;
@@ -783,12 +809,12 @@ function ResultsSection({ data: _data, userComment, hasSubmitted }: { data: Budg
         <p className="text-sm text-stone-500 mb-4">
           Average preferred change across {activeResponses} {selectedDistrict === "all" ? "citywide" : `District ${selectedDistrict}`} responses, ranked by signal strength
         </p>
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={deptChartData} layout="vertical" margin={{ left: 110, right: 48, top: 2, bottom: 2 }}>
+        <ResponsiveContainer width="100%" height={360}>
+          <BarChart data={deptChartData} layout="vertical" margin={{ left: 0, right: 40, top: 2, bottom: 2 }}>
             <XAxis type="number" tickFormatter={(v) => `${v > 0 ? "+" : ""}${v}%`}
               tick={{ fill: "#a8a29e", fontSize: 11 }} axisLine={false} tickLine={false} domain={[-10, 15]} />
-            <YAxis type="category" dataKey="name" width={108}
-              tick={{ fill: "#1c1917", fontSize: 12 }} axisLine={false} tickLine={false} />
+            <YAxis type="category" dataKey="name" width={120}
+              tick={<WrappedYAxisTick />} axisLine={false} tickLine={false} />
             <ReferenceLine x={0} stroke="#e7e5e4" strokeWidth={2} />
             <Tooltip
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -1214,13 +1240,13 @@ export default function Home() {
                 <a href="https://data.sandiego.gov/datasets/operating-budget/" target="_blank" rel="noopener noreferrer"
                    className="text-teal-600 underline">Data source.</a>
               </p>
-              <ResponsiveContainer width="100%" height={340}>
+              <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={chartData} layout="vertical"
-                  margin={{ left: 110, right: 40, top: 4, bottom: 4 }}>
+                  margin={{ left: 0, right: 40, top: 4, bottom: 4 }}>
                   <XAxis type="number" tickFormatter={(v) => `$${v}M`}
-                    tick={{ fill: "#94a3b8", fontSize: 12 }} axisLine={false} tickLine={false} />
-                  <YAxis type="category" dataKey="name" width={140}
-                    tick={{ fill: "#1e293b", fontSize: 12 }} axisLine={false} tickLine={false} />
+                    tick={{ fill: "#94a3b8", fontSize: 11 }} axisLine={false} tickLine={false} />
+                  <YAxis type="category" dataKey="name" width={120}
+                    tick={<WrappedYAxisTick />} axisLine={false} tickLine={false} />
                   <Tooltip
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     formatter={(v: any) => [`$${Number(v).toFixed(0)}M`, "FY26 Budget"]}
