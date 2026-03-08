@@ -41,6 +41,7 @@ const ALLOWED_ORIGINS = [
   "http://localhost:3000",
   "http://localhost:3001",
   "https://sd-budget-voice.vercel.app",
+  "https://sd-budget-voice.hongvan-pham91.workers.dev",
 ];
 
 function isAllowedOrigin(origin: string | null): boolean {
