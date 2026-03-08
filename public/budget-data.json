@@ -13,7 +13,11 @@
       "description": "Patrol, investigations, traffic enforcement, and community policing across 9 divisions. Largest discretionary department in the General Fund.",
       "perResident": 546,
       "employees": 2900,
-      "context": "San Diego has one of the highest police-to-resident ratios among major California cities."
+      "context": "San Diego has one of the highest police-to-resident ratios among major California cities.",
+      "personnelPct": 87,
+      "union": "Police Officers Association (POA)",
+      "realisticCutMax": -5,
+      "contractConstraint": "The POA contract locked in 4% raises in both FY2025 and FY2026 — those costs are already in the baseline. Layoffs are governed by Civil Service Rules requiring bumping rights and seniority competition, a multi-year legal process. A 5% cut ($39M) would require eliminating roughly 145 positions through attrition alone, which takes years. Deeper cuts would require renegotiating the MOU when it expires June 30, 2026."
     },
     {
       "id": "fire",
@@ -24,7 +28,11 @@
       "description": "Fire suppression, emergency medical services, lifeguard operations, and wildfire prevention across 47 fire stations.",
       "perResident": 320,
       "employees": 2100,
-      "context": "Wildfire risk has increased costs significantly — fire prevention programs doubled since 2020."
+      "context": "Wildfire risk has increased costs significantly — fire prevention programs doubled since 2020.",
+      "personnelPct": 91,
+      "union": "IAFF Local 145",
+      "realisticCutMax": -3,
+      "contractConstraint": "The Local 145 MOU explicitly states that layoffs require 'mutual consent of the parties' — the union effectively holds a veto. The contract locked in 4% + 1% + 3% + 1% raises across FY2025–26. Station closures also require environmental review and public process lasting 12–24 months. Fire code mandates minimum crew sizes per apparatus regardless of budget."
     },
     {
       "id": "parks",
@@ -35,7 +43,12 @@
       "description": "Maintenance of 340+ parks, recreation centers, pools, trails, canyons, and open space. The proposed budget includes reduced maintenance hours.",
       "perResident": 172,
       "employees": 1800,
-      "context": "Parks serve as heat refuges and mental health resources — disproportionately used by lower-income neighborhoods."
+      "context": "Parks serve as heat refuges and mental health resources — disproportionately used by lower-income neighborhoods.",
+      "previousCuts": "Maintenance frequencies were reduced in FY2026 even as the budget grew — more parks and aging facilities are now served with fewer staff hours. Some community pools shifted to limited seasonal schedules compared to pre-pandemic operations.",
+      "personnelPct": 72,
+      "union": "Local 127 (AFSCME) and MEA",
+      "realisticCutMax": -12,
+      "contractConstraint": "Layoffs are legally permitted under seniority rules, but the city must make 'best efforts' to find alternative city employment first. In practice, Parks cuts usually mean reduced operating hours, closed pools, and deferred maintenance rather than mass layoffs. This department has more flexibility than Police or Fire but cuts are still felt immediately by residents."
     },
     {
       "id": "transportation",
@@ -46,7 +59,12 @@
       "description": "Street maintenance, traffic signals, sidewalk repair. SD has a $3B+ deferred maintenance backlog.",
       "perResident": 137,
       "employees": 900,
-      "context": "Every dollar cut today adds ~$7 in future repair costs due to deferred street maintenance."
+      "context": "Every dollar cut today adds ~$7 in future repair costs due to deferred street maintenance.",
+      "previousCuts": "Annual street resurfacing has fallen short of the ~40-mile target needed to prevent net backlog growth for multiple consecutive years. The deferred maintenance backlog now exceeds $3 billion and continues to grow.",
+      "personnelPct": 40,
+      "union": "Local 127 (AFSCME)",
+      "realisticCutMax": -10,
+      "contractConstraint": "About 60% of this budget is contracts and materials — asphalt, signals, sidewalk repair crews — which can be reduced faster than union headcount. Personnel are Local 127-covered with standard seniority layoff rules. Cuts are contractually feasible but economically costly: the city's own data shows $1 cut from maintenance becomes $7 in future repairs."
     },
     {
       "id": "homelessness",
@@ -57,7 +75,12 @@
       "description": "Outreach teams, shelter operations, housing navigation, and encampment response. Coordinates with county and nonprofits.",
       "perResident": 75,
       "employees": 420,
-      "context": "San Diego has the 4th largest unhoused population in the US. Shelter costs have risen 40% since 2021."
+      "context": "San Diego has the 4th largest unhoused population in the US. Shelter costs have risen 40% since 2021.",
+      "previousCuts": "Several nonprofit outreach and shelter contracts were not renewed at full funding levels in FY2025, reducing the city's capacity to respond across all districts. The proposed FY2027 budget does not fully restore those reductions.",
+      "personnelPct": 32,
+      "union": "MEA (city staff only; most spending goes to nonprofit contracts)",
+      "realisticCutMax": -18,
+      "contractConstraint": "This is the most contract-heavy department — the majority of spending flows to nonprofit shelter and outreach providers, not city employees. Those contracts can be renegotiated or reduced more quickly than union labor. The roughly 420 city employees are MEA-covered with standard layoff rules. This is technically the most 'cuttable' department by contract — but cuts directly reduce beds and outreach capacity."
     },
     {
       "id": "library",
@@ -68,7 +91,12 @@
       "description": "36 branch libraries plus Central Library — books, digital resources, programs for children, seniors, job seekers, and new residents.",
       "perResident": 53,
       "employees": 650,
-      "context": "Libraries are the only truly free public space in most neighborhoods. Branch closures disproportionately affect renters and seniors."
+      "context": "Libraries are the only truly free public space in most neighborhoods. Branch closures disproportionately affect renters and seniors.",
+      "previousCuts": "Operating hours were reduced at multiple branches in FY2025 and FY2026. Several locations now close earlier on weekdays and operate on reduced weekend schedules compared to pre-pandemic service levels.",
+      "personnelPct": 78,
+      "union": "MEA",
+      "realisticCutMax": -15,
+      "contractConstraint": "MEA-covered librarians have seniority-based layoff protections, but branch closures and hour reductions are legally permissible. Reduced hours ($5M savings) are faster than closures, which require months of public process and Council approval. Each full branch closure saves roughly $2–3M per year. Libraries are one of the few departments where the full 15% slider range is feasible by FY2027 — but it would mean closing 5–7 branches."
     },
     {
       "id": "stormwater",
@@ -79,7 +107,11 @@
       "description": "Flood control infrastructure, stormwater treatment, and MS4 permit compliance. Heavy rain events have exposed major infrastructure gaps.",
       "perResident": 61,
       "employees": 380,
-      "context": "Recent storms revealed $500M+ in deferred stormwater infrastructure needs."
+      "context": "Recent storms revealed $500M+ in deferred stormwater infrastructure needs.",
+      "personnelPct": 55,
+      "union": "MEA and Local 127 (AFSCME)",
+      "realisticCutMax": -5,
+      "contractConstraint": "The federal MS4 permit under the Clean Water Act sets a hard floor on compliance spending — the EPA can sue the city for under-investment. This is not a negotiating position; it is a legal mandate. Only non-compliance spending (some capital projects, discretionary programs) can realistically be cut. Cuts beyond ~5% risk federal fines that would cost more than the savings."
     },
     {
       "id": "citywide",
@@ -90,7 +122,11 @@
       "description": "Debt service, City Attorney, City Treasurer, Finance, HR, IT, and other central services that support all departments.",
       "perResident": 328,
       "employees": 1200,
-      "context": "Includes pension obligations — the city's pension debt is ~$3B and growing."
+      "context": "Includes pension obligations — the city's pension debt is ~$3B and growing.",
+      "personnelPct": 22,
+      "union": "MEA and DCAA (Deputy City Attorneys); pension and debt payments are non-union obligations",
+      "realisticCutMax": -4,
+      "contractConstraint": "Pension debt payments (~$200M/yr) and bond debt service are constitutionally and legally protected in California — missing them triggers default and credit downgrades. These are roughly 60% of this category and cannot be reduced. The remaining 40% — IT systems, HR, Finance, legal — has some flexibility but cuts ripple across every other department that depends on these shared services."
     },
     {
       "id": "other",
@@ -101,7 +137,11 @@
       "description": "Development Services, Economic Development, City Planning, General Services, Real Estate, and other City functions.",
       "perResident": 200,
       "employees": 1400,
-      "context": "Includes permitting (which funds itself via fees) and economic development programs."
+      "context": "Includes permitting (which funds itself via fees) and economic development programs.",
+      "personnelPct": 65,
+      "union": "MEA and Local 127 (AFSCME)",
+      "realisticCutMax": -8,
+      "contractConstraint": "Development Services is largely fee-funded — cutting staff slows permitting, which reduces fee revenue, partially canceling out the savings. Economic development programs and real estate functions are more cuttable. Standard MEA and Local 127 layoff protections apply to all personnel here."
     }
   ],
   "revenues": [
@@ -109,48 +149,94 @@
       "id": "prop_tax",
       "name": "Property Tax",
       "fy26": 574.4,
-      "description": "State-mandated 1% property tax — SD receives ~17% of the countywide levy. Cannot be increased without a 2/3 voter supermajority.",
-      "controllable": false
+      "description": "State law (Proposition 13, 1978) caps property tax at 1% of assessed value, set at purchase price and limited to 2% annual growth. San Diego receives roughly 17 cents of every dollar — the rest goes to schools, the county, and special districts. The city cannot legally raise this rate.",
+      "controllable": false,
+      "requiresVoterApproval": false
     },
     {
       "id": "sales_tax",
       "name": "Sales Tax",
       "fy26": 367.3,
-      "description": "City receives 1% of the 8.75% sales tax. A 0.25% increase generates ~$90M/year.",
+      "description": "San Diego's total sales tax rate is 8.75%. The city keeps only 1 percentage point of that — the rest goes to the state and county. A local sales tax increase requires a simple majority vote from San Diego residents. This is the single largest lever available to the city. Per the IBA's FY2027-2031 outlook, a 0.5% increase would generate approximately $180M/yr — enough to cover the entire projected deficit with room to spare. Source: IBA Five-Year Financial Outlook, November 2025.",
       "controllable": true,
+      "requiresVoterApproval": true,
       "options": [
-        { "label": "0.25% increase (+$90M/yr)", "value": 90, "note": "Requires simple majority vote" },
-        { "label": "0.5% increase (+$180M/yr)", "value": 180, "note": "Requires simple majority vote" }
+        { "label": "0.25% increase (+$90M/yr)", "value": 90, "note": "Requires a simple majority (50%+1) vote from San Diego residents. City Council can place it on the ballot." },
+        { "label": "0.5% increase (+$180M/yr)", "value": 180, "note": "Would cover the full $120M deficit with $60M to spare. Requires simple majority voter approval." }
       ]
     },
     {
       "id": "tot",
       "name": "Hotel Tax (TOT)",
       "fy26": 175.2,
-      "description": "Transient Occupancy Tax on hotel stays. Currently 10.5%. San Diego is a major tourism destination.",
+      "description": "The Transient Occupancy Tax applies to hotel, motel, and short-term rental stays in San Diego. The current rate is 10.5%. Tourism is one of San Diego's largest industries — roughly 35 million visitors per year — making this a relatively efficient revenue source since it is largely paid by non-residents.",
       "controllable": true,
+      "requiresVoterApproval": false,
       "options": [
-        { "label": "+1% hotel tax (+$17M/yr)", "value": 17, "note": "Council can approve without voter vote" }
+        { "label": "+1% hotel tax (+$17M/yr)", "value": 17, "note": "City Council can raise the TOT rate without a voter vote. The tourism industry has historically opposed increases, and very high rates can shift conventions to competing cities." }
+      ]
+    },
+    {
+      "id": "str_enforcement",
+      "name": "Short-Term Rental (STRO) Fees",
+      "fy26": 2,
+      "description": "San Diego's Short-Term Residential Occupancy (STRO) program licenses Airbnb, VRBO, and similar rentals. License and application fees generate revenue on a biennial cycle — roughly $5.8M in odd-numbered fiscal years (when most licenses renew) and $2.1M in even-numbered years. FY2027 is an odd year, so higher fees are expected. This revenue is already built into the city's baseline projections.",
+      "controllable": false,
+      "requiresVoterApproval": false
+    },
+    {
+      "id": "transfer_tax",
+      "name": "Real Property Transfer Tax",
+      "fy26": 11.5,
+      "description": "When real property is sold in San Diego, the County collects $1.10 per $1,000 of the sale price and remits half — $0.55 per $1,000 — to the City. This generates roughly $11.5–12M per year for San Diego's General Fund. Doubling the city's share (to $1.10/$1,000) would require voter approval and is projected to add approximately $11–12M annually. Note: San Diego voters rejected a similar transfer tax increase (Measure E) in November 2024 by a wide margin, making passage politically difficult in the near term. Source: IBA Five-Year Financial Outlook, November 2025.",
+      "controllable": true,
+      "requiresVoterApproval": true,
+      "options": [
+        { "label": "Double city share to $1.10/$1,000 (+~$12M/yr)", "value": 12, "note": "Requires simple majority voter approval. Paid once by sellers at closing — not an ongoing annual tax. Revenue fluctuates with the real estate market. Voters rejected Measure E in 2024; political support would need to be rebuilt." }
+      ]
+    },
+    {
+      "id": "parking",
+      "name": "Parking Revenue",
+      "fy26": 15.5,
+      "description": "The city earns parking revenue from metered spaces, garages, and the Balboa Park/Zoo parking program ($12.5M + $3M from Zoo). However, as of late 2025, the City Council is actively revising the Balboa Park paid parking program — the final structure and revenue amount are uncertain. Parking rates at high-demand locations (beach communities, downtown, Gaslamp) have not kept pace with nearby private parking. Rate increases require only Council approval. Source: IBA Five-Year Financial Outlook, November 2025.",
+      "controllable": true,
+      "requiresVoterApproval": false,
+      "options": [
+        { "label": "Rate increases in high-demand zones (+$5–10M/yr)", "value": 7, "note": "City Council can raise rates without a voter vote. Balboa Park program revenue is currently being revised by Council — actual increase depends on the outcome. Concentrating increases in high-demand areas minimizes impact on lower-income neighborhoods." }
+      ]
+    },
+    {
+      "id": "business_tax",
+      "name": "Business License Tax Reform",
+      "fy26": 8,
+      "description": "San Diego businesses currently pay a flat fee of $34–$125 per year regardless of size or revenue — one of the lowest business taxes of any major California city. Los Angeles and San Francisco charge fees based on gross receipts (a percentage of revenue), which means larger businesses pay more. A modest revenue-based fee structure, with a small-business exemption for firms under $1M in annual revenue, could raise significant new funds.",
+      "controllable": true,
+      "requiresVoterApproval": true,
+      "options": [
+        { "label": "Revenue-based fee for businesses over $1M (+$25M/yr)", "value": 25, "note": "Requires voter approval. Small businesses (under $1M revenue) would be exempted. Would take 12–18 months after approval to implement and collect." }
       ]
     },
     {
       "id": "fees",
       "name": "User Fee Recovery",
       "fy26": 0,
-      "description": "Many city services are provided below cost. Increasing cost recovery on permits and recreation programs could raise revenue.",
+      "description": "Many city services — recreation programs, permits, facility rentals — are provided at below-cost rates, with the General Fund subsidizing the difference. Raising fees to better recover actual costs shifts the expense from all taxpayers to the people directly using each service. The tradeoff: some programs that serve lower-income residents may become less accessible.",
       "controllable": true,
+      "requiresVoterApproval": false,
       "options": [
-        { "label": "Increase cost recovery (+$25M/yr)", "value": 25, "note": "Shifts costs to direct service users" }
+        { "label": "Increase cost recovery on permits & programs (+$25M/yr)", "value": 25, "note": "City Council can adjust fees — no voter vote needed. Equity considerations matter: fee increases for parks and recreation hit lower-income residents hardest." }
       ]
     },
     {
       "id": "cannabis",
       "name": "Cannabis Tax",
       "fy26": 14.0,
-      "description": "Tax on cannabis retailers. Current rate is 8%. Raising it could generate modest additional revenue.",
+      "description": "San Diego taxes cannabis retailers at 10% of gross receipts and cannabis production at 2%, currently generating about $14M per year. The IBA projects this revenue to remain flat or decline as competition from the illicit market intensifies — higher tax rates may accelerate that shift. The city has limited upside here. Source: IBA Five-Year Financial Outlook, November 2025.",
       "controllable": true,
+      "requiresVoterApproval": false,
       "options": [
-        { "label": "Increase rate (+$8M/yr)", "value": 8, "note": "Risk of pushing buyers to unregulated market" }
+        { "label": "Modest rate increase (+$3–5M/yr)", "value": 4, "note": "City Council can raise the rate without a voter vote. The IBA cautions that cannabis revenue is projected flat-to-declining due to illicit market competition. Raising rates too high accelerates the shift to unregulated sales and could reduce total revenue." }
       ]
     }
   ],
